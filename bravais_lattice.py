@@ -151,7 +151,7 @@ presets = {
 }
 def main():
     st.title("Bravais Lattice Visualizer")
-    st.write("Choose the crystal size, unit cell type, and change the size/angle parameters in the side bar. Left click to orbit, scroll to zoom,")
+    st.write("Choose the crystal size, unit cell type, and change the size/angle parameters in the side bar. Left click to orbit, scroll to zoom.\nSource: https://github.com/trilusa/bravais-lattice-viz")
     N = st.sidebar.number_input('Dimension of the Space Lattice', min_value=1, max_value=5, value=1, step=1)
     # s = st.sidebar.slider("Atom Size", min_value=1, max_value=20, value=, step=1)
     preset = st.sidebar.selectbox('Choose a Crystal Type', options=list(presets.keys()))
